@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header {
+    position: relative;
+    text-align: center;
+}
+.hero-img {
+    width: 100%;
+}
+.nav-buttons {
+    position: absolute;
+    top: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.app-name {
+    font-family: 'Lobster', cursive;
+}
+.welcome-forms {
+    position: absolute;
+    top: 40%;
+    padding: 20px;
+    background-color: grey;
+    opacity: 0.9;
+    border-radius: 10px ;
+}
