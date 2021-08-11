@@ -1,6 +1,6 @@
 const { Schema, model} = require('mongoose')
 
-const regimentModel = new Schema(
+const regimentSchema = new Schema(
     {
         day: {
             type: String,
@@ -17,7 +17,14 @@ const regimentModel = new Schema(
             type: String,
             required: true,
             trim: true
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now
         }
 
-    }
+    },
 )
+
+const Regitment = model('Regiment', regimentSchema)
+module.exports = Regitment
