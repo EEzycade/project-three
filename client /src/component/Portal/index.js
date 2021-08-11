@@ -4,28 +4,39 @@ import '../Portal/style.css'
 function Portal() {
 
     return (
-        <div>
-            <header>
-                <div className='nav-buttons'>
-                    <a href="/">blank</a>
-                    <a href="/">blank</a>
-                    <div>
-                        <a href="/" className='app-name'>Health <span className='app-symbol'> + </span> Wealth</a>
+        <div className='portal'>
+            <img src={require('../../assets/img/hero.jpg').default} className='hero-img' />
+            <div className='main'>
+                <div >
+                    <div className='logo'>
+                        <h1 className='app-name health'><span className='span-h'>H</span>ealth</h1>
+                        <h1 className='app-name wealth'>
+                            <span className='span-w'>W</span>ealth
+                            <span className='span-plus'>+</span>
+                        </h1>
                     </div>
-                    <a href="/">Contact</a>
-                    <a href="/">blank</a>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div className='info-text'>
+                        <h3>A Community Spreading healthy habits </h3>
+                        <p>Together</p>
+                    </div>
                 </div>
-                <img src={require("../../assets/img/hero.jpg").default} alt='healthy food' className='hero-img' />
                 <div className='welcome-forms'>
                     <form className='sign-in-form'>
-                        <p>Sign In!</p>
                         <div class="mb-3">
                             <input type="email" class="form-control" placeholder="Email" />
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Password" />
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <div className='create-btn'>
+                            <br />
+                            <button type="submit" class="btn btn-success">Create New Account </button>
+                        </div>
                     </form>
                     <form className='sign-up-form'>
                         <p>Sign Me Up!</p>
@@ -44,10 +55,12 @@ function Portal() {
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Password" />
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-">Submit</button>
                     </form>
                 </div>
-            </header>
+            </div>
+
+
         </div>
 
 
